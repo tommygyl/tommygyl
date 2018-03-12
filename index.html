@@ -1,387 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>Home</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Walk Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/component.css" rel="stylesheet" type="text/css"  />
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
-<!-- //js -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+<meta charset="gb2312">
+<title>个人博客模板古典系列之——江南墨卷</title>
+<meta name="keywords" content="个人博客模板古典系列之——江南墨卷" />
+<meta name="description" content="个人博客模板古典系列之——江南墨卷" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">个人博客模板古典系列之——江南墨卷</div>
+      <div class="search f_r">
+        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="搜索" type="submit">
+        </form>
+      </div>
+      <div class="blank"></div>
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="#">关于我</a>
+              <ul>
+                <li><a href="about.html">个人简介</a></li>
+                <li><a href="listpic.html">个人相册</a></li>
+              </ul>
+            </li>
+            <li><a href="#">我的日记</a>
+              <ul>
+                <li><a href="newslistpic.html">个人日记</a></li>
+                <li><a href="newslistpic.html">学习笔记</a></li>
+              </ul>
+            </li>
+            <li><a href="newslistpic.html">技术文章</a> </li>
+            <li><a href="#">给我留言</a> </li>
+          </ul>
+        </div>
+      </nav>
+      <SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
 		});
 	});
-</script>
-<!-- start-smoth-scrolling -->
-</head>
-	
-<body class="cbp-spmenu-push">
-<!-- banner -->
-	<div class="banner">
-		<div class="container">
-			<div class="header">
-				<div class="header-left">
-					<form>
-						<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required="">
-						<input type="submit" value="" >
-						<div class="clearfix"> </div>
-					</form>
-				</div>
-				<div class="header-left1">
-					<h1><a href="index.html">Walk<span>Where To Go This Summer?</span></a></h1>
-				</div>
-				<!-- #push_sidebar -->
-				<div class="top-nav">
-					 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-						<h3>Menu</h3>
-						<ul>
-							<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-							<li><a href="about.html"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>About</a></li>
-							<li><a href="services.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Services</a></li>
-							<li><a href="gallery.html"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Gallery</a></li>
-							<li><a href="shortcodes.html"><span class="glyphicon glyphicon-text-size" aria-hidden="true"></span>Short Codes</a></li>
-							<li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contact</a></li>
-						</ul>
-					</nav>
-					 <div class="main buttonset">	
-					<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
-						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
-					</div>
-				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-						<script src="js/classie.js"></script>
-						<script>
-							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-							showRightPush = document.getElementById( 'showRightPush' ),
-							body = document.body;
+</SCRIPT> 
+    </div>
+  </header>
+  <div class="jztop"></div>
+  <div class="container">
+    <div class="bloglist f_l">
+      <h3><a href="/jstt/bj/2017-07-13/784.html">【心路历程】请不要在设计这条路上徘徊啦</a></h3>
+      <figure><img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦"></figure>
+      <ul>
+        <p> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。</p>
+        <a title="【心路历程】请不要在设计这条路上徘徊啦" href="/jstt/bj/2017-07-13/784.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2017-07-13</span><span>作者：</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那些年】总结个人博客经历的这四年…</a></h3>
+      <figure><img src="images/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年…"></figure>
+      <ul>
+        <p>博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补</p>
+        <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2015-01-09</span><span>作者：杨青</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+      <h3><a href="/jstt/bj/2014-11-06/732.html">分享我的个人博客访问量如何做到IP从10到600的(图文)</a></h3>
+      <figure><img src="images/img_3.jpg" alt="分享我的个人博客访问量如何做到IP从10到600的(图文)"></figure>
+      <ul>
+        <p>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合理的地方。</p>
+        <a title="分享我的个人博客访问量如何做到IP从10到600的(图文)" href="/jstt/bj/2014-11-06/732.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2014-11-06</span><span>作者：杨青</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+      <h3><a href="/jstt/bj/2014-10-18/731.html">帝国cms常用标签调用方法总结（不得不收藏哦）</a></h3>
+      <figure><img src="images/img_4.jpg" alt="帝国cms常用标签调用方法总结（不得不收藏哦）"></figure>
+      <ul>
+        <p>整理了一些常用的帝国cms调用，灵动标签和万能标签的调用方法举例。幻灯片、标题、一级栏目、二级栏目、带模版的友情链接（下拉菜单）、判断内容页字段为空时是如何调用的等等...新手可以借鉴学习。</p>
+        <a title="帝国cms常用标签调用方法总结（不得不收藏哦）" href="/jstt/bj/2014-10-18/731.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2015-01-09</span><span>作者：杨青</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+      <h3><a href="/jstt/bj/2017-07-13/784.html">【心路历程】请不要在设计这条路上徘徊啦</a></h3>
+      <figure><img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦"></figure>
+      <ul>
+        <p> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。</p>
+        <a title="【心路历程】请不要在设计这条路上徘徊啦" href="/jstt/bj/2017-07-13/784.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2017-07-13</span><span>作者：</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那些年】总结个人博客经历的这四年…</a></h3>
+      <figure><img src="images/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年…"></figure>
+      <ul>
+        <p>博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补</p>
+        <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+      </ul>
+      <p class="dateview"><span>2015-01-09</span><span>作者：杨青</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
+    </div>
+    <div class="r_box f_r">
+      <div class="tit01">
+        <h3 class="tit">关注我</h3>
+        <div class="gzwm">
+          <ul>
+            <li><a class="email" href="#" target="_blank">我的电话</a></li>
+            <li><a class="qq" href="#mailto:admin@admin.com" target="_blank">我的邮箱</a></li>
+            <li><a class="tel" href="#" target="_blank">我的QQ</a></li>
+            <li><a class="prize" href="#">个人奖项</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--tit01 end-->
+      
+      <div class="tuwen">
+        <h3 class="tit">图文推荐</h3>
+        <ul>
+          <li><a href="/"><img src="images/01.jpg"><b>住在手机里的朋友</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="/"><img src="images/02.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="/" title="手机的16个惊人小秘密，据说99.999%的人都不知"><img src="images/03.jpg"><b>手机的16个惊人小秘密，据说...</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="/"><img src="images/06.jpg"><b>住在手机里的朋友</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="/"><img src="images/04.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="/"><img src="images/02.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+          <li><a href="/" title="手机的16个惊人小秘密，据说99.999%的人都不知"><img src="images/03.jpg"><b>手机的16个惊人小秘密，据说...</b></a>
+            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
+          </li>
+        </ul>
+      </div>
+      <div class="ph">
+        <h3 class="tit">点击排行</h3>
+        <ul class="rank">
+          <li><a href="/jstt/bj/2017-07-13/784.html" title="【心路历程】请不要在设计这条路上徘徊啦" target="_blank">【心路历程】请不要在设计这条路上徘徊啦</a></li>
+          <li><a href="/news/s/2016-05-20/751.html" title="IP要突破2000+了" target="_blank">IP要突破2000+了</a></li>
+          <li><a href="/jstt/web/2015-07-03/749.html" title="帝国cms首页、自定义页面如何实现分页" target="_blank">帝国cms首页、自定义页面如何实现分页</a></li>
+          <li><a href="/jstt/web/2015-02-25/745.html" title="【已评选】给我模板PSD源文件，我给你设计HTML！" target="_blank">【已评选】给我模板PSD源文件，我给你设计HTML！</a></li>
+          <li><a href="/jstt/bj/2015-02-14/744.html" title="【郑重申明】本站只提供静态模板下载！" target="_blank">【郑重申明】本站只提供静态模板下载！</a></li>
+          <li><a href="/news/s/2015-01-23/741.html" title="【孕期日记】生活本该如此" target="_blank">【孕期日记】生活本该如此</a></li>
+          <li><a href="/jstt/bj/2015-01-09/740.html" title="【匆匆那些年】总结个人博客经历的这四年…" target="_blank">【匆匆那些年】总结个人博客经历的这四年…</a></li>
+          <li><a href="/jstt/web/2015-01-01/739.html" title=" 2014年度优秀个人博客排名公布" target="_blank"> 2014年度优秀个人博客排名公布</a></li>
+          <li><a href="/jstt/web/2014-12-18/736.html" title="2014年度优秀个人博客评选活动" target="_blank">2014年度优秀个人博客评选活动</a></li>
+          <li><a href="/jstt/css3/2014-12-09/734.html" title="使用CSS3制作文字、图片倒影" target="_blank">使用CSS3制作文字、图片倒影</a></li>
+          <li><a href="/jstt/css3/2014-11-18/733.html" title="【分享】css3侧边栏导航不同方向划出效果" target="_blank">【分享】css3侧边栏导航不同方向划出效果</a></li>
+          <li><a href="/jstt/bj/2014-11-06/732.html" title="分享我的个人博客访问量如何做到IP从10到600的(图文)" target="_blank">分享我的个人博客访问量如何做到IP从10到600的(图文)</a></li>
+        </ul>
+      </div>
+      <div class="ad"> <img src="images/03.jpg"> </div>
+    </div>
+  </div>
+  <!-- container代码 结束 -->
 
-							showRightPush.onclick = function() {
-								classie.toggle( this, 'active' );
-								classie.toggle( body, 'cbp-spmenu-push-toleft' );
-								classie.toggle( menuRight, 'cbp-spmenu-open' );
-								disableOther( 'showRightPush' );
-							};
-
-							function disableOther( button ) {
-								if( button !== 'showRightPush' ) {
-									classie.toggle( showRightPush, 'disabled' );
-								}
-							}
-						</script>
-						<!-- /script-for-menu -->
-				</div>
-				<!-- /#push_sidebar -->
-				<div class="clearfix"> </div>
-			</div>
-			<div class="banner-info">
-				<h3>Discover The Most Beautiful Places</h3>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-					eu fugiat nulla pariatur.</p>
-				<div class="more">
-					<a href="single.html" class="type-4">
-						<span> Read More... </span>
-						<span> Read More... </span>
-						<span> Read More... </span>
-						<span> Read More... </span>	
-						<span> Read More... </span>
-						<span> Read More... </span>
-					</a>
-				</div>
-				<div class="social-icons">
-					<ul>
-						<li><a href="#" class="twitter"></a></li>
-						<li><a href="#" class="facebook"></a></li>
-						<li><a href="#" class="google"></a></li>
-						<li><a href="#" class="p"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- //banner -->
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >浼佷笟缃戠珯妯℃澘</a></div>
-<!-- banner-bottom -->
-	<div class="banner-bottom">
-		<div class="col-md-2 banner-bottom-left">
-			
-		</div>
-		<div class="col-md-3 banner-bottom-left1">
-			<div class="banner-bottom-left1-grid">
-				<div class="globe">
-					<span></span>
-				</div>
-				<h3><span>We will turn </span>your dreams to reality</h3>
-				<div class="progress progress1">
-				  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
-					<span class="sr-only">40% Complete</span>
-				  </div>
-				</div>
-				<p>"But I must explain to you how all this mistaken idea of denouncing pleasure and 
-					praising pain was born and I will give you a complete account of the system.</p>
-				<div class="more m1">
-					<a href="single.html" class="type-4">
-						<span> Read More... </span>
-						<span> Read More... </span>
-						<span> Read More... </span>
-						<span> Read More... </span>	
-						<span> Read More... </span>
-						<span> Read More... </span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-7 banner-bottom-left2">
-			<div class="grid">
-				<figure class="effect-lexi effect-lexi1">
-					<img src="images/3.jpg" alt="" class="img-responsive" />
-					<figcaption class="lexifig">
-						<h4>Life is an adventure take <span>Risks</span></h4>
-						<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it.</p>
-					</figcaption>			
-				</figure>
-			</div>
-			<h3>Certainly, travel is more than the seeing of sights; it is a change that goes on,
-				deep and permanent, in the ideas of living.</h3>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	<div class="banner-bottom1">
-		<div class="col-md-6 banner-bottom-left2 banner-bottom1-left2">
-			<div class="grid">
-				<figure class="effect-lexi">
-					<img src="images/2.jpg" alt="" class="img-responsive" />
-					<figcaption>
-						<h4>Collect moments not <span>things</span></h4>
-						<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it.</p>
-					</figcaption>			
-				</figure>
-			</div>
-		</div>
-		<div class="col-md-4 banner-bottom-lft1">
-			<h3>01 .</h3>
-			<h4>Its better to see something once than to hear about it a thousand times...</h4>
-			<div class="progress progress1 progress2">
-			  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
-				<span class="sr-only">40% Complete</span>
-			  </div>
-			</div>
-			<p>To take a trivial example, which of us ever undertakes laborious physical exercise, 
-				except to obtain some advantage from it? But who has any right to find fault with a man.</p>
-		</div>
-		<div class="col-md-2 banner-bottom-left">
-			
-		</div>
-		<div class="clearfix"> </div>
-		<div class="col-md-2 banner-bottom-left">
-			
-		</div>
-		<div class="col-md-4 banner-bottom-lft1">
-			<h3>02 .</h3>
-			<h4 class="with">The world is a book and those who do not travel read only a page...</h4>
-			<div class="progress progress1 progress2">
-			  <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
-				<span class="sr-only">40% Complete</span>
-			  </div>
-			</div>
-			<p class="exercise">To take a trivial example, which of us ever undertakes laborious physical exercise, 
-				except to obtain some advantage from it? But who has any right to find fault with a man.</p>
-		</div>
-		<div class="col-md-6 banner-bottom-left2 banner-bottom1-left2">
-			<div class="grid">
-				<figure class="effect-lexi effect-lexi1">
-					<img src="images/4.jpg" alt="" class="img-responsive" />
-					<figcaption class="lexifig">
-						<h4>Courage is found in unlikely <span>places</span></h4>
-						<p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it.</p>
-					</figcaption>			
-				</figure>
-			</div>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-<!-- //banner-bottom -->
-<!-- banner-bottom-slider -->
-	<div class="banner-bottom-slider">
-		<div class="container">
-			<div class="col-md-4 banner-bottom-slider-left">
-				<h3>Let's go on an <span>Adventurous Travel</span></h3>
-				<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
-			</div>
-			<div class="col-md-8 banner-bottom-slider-right">
-				<ul id="flexiselDemo1">	
-					<li>
-						<div class="banner-bottom-slider-right1">
-							<img src="images/5.jpg" alt=" " class="img-responsive" />
-							<ul>
-								<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 8</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Admin</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 8</a></li>
-							</ul>
-							<p><i>" travel <span>becomes</span> a strategy for accumulating <span>Photographs</span>."</i></p>
-						</div>
-					</li>
-					<li>
-						<div class="banner-bottom-slider-right1">
-							<img src="images/7.jpg" alt=" " class="img-responsive" />
-							<ul>
-								<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 8</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Admin</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 8</a></li>
-							</ul>
-							<p><i>" <span>journey</span> is best measured in friends, rather than <span>miles</span>."</i></p>
-						</div>
-					</li>
-					<li>
-						<div class="banner-bottom-slider-right1">
-							<img src="images/6.jpg" alt=" " class="img-responsive" />
-							<ul>
-								<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 8</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Admin</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> 8</a></li>
-							</ul>
-							<p><i>" <span>nature</span> is one our greatest <span>teachers</span>."</i></p>
-						</div>
-					</li>
-				</ul>
-					<script type="text/javascript">
-						$(window).load(function() {
-						$("#flexiselDemo1").flexisel({
-							visibleItems: 3,
-							animationSpeed: 1000,
-							autoPlay: true,
-							autoPlaySpeed: 3000,    		
-							pauseOnHover: true,
-							enableResponsiveBreakpoints: true,
-							responsiveBreakpoints: { 
-								portrait: { 
-									changePoint:480,
-									visibleItems: 1
-								}, 
-								landscape: { 
-									changePoint:640,
-									visibleItems: 2
-								},
-								tablet: { 
-									changePoint:768,
-									visibleItems: 3
-								}
-							}
-						});
-						
-					 });
-					</script>
-					<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //banner-bottom-slider -->
-<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="col-md-3 footer-grid">
-				<img src="images/8.jpg" alt=" " class="img-responsive" />
-			</div>
-			<div class="col-md-3 footer-grid">
-				<h2><a href="index.html">Walk<span>Where To Go This Summer?</span></a></h2>
-				<p>But I must explain to you how all this mistaken idea of denouncing pleasure 
-					and praising pain was born.</p>
-				<ul>
-					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li>
-					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li>
-				</ul>
-			</div>
-			<div class="col-md-3 footer-grid">
-				<h4>Flickr Photos</h4>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/5.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="footer-grid1">
-					<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-3 footer-grid">
-				<h4>Booking Hours</h4>
-				<div class="footer-grid2">
-					<ul class="timings">
-						<li>Monday <i>.....</i> 10AM to 7PM</li>
-						<li>Friday <i>.....</i> 9AM to 5PM</li>
-						<li>Sunday <i>.....</i> 10AM to 2PM</li>
-					</ul>
-					<div class="social-icons social-icons1">
-						<ul>
-							<li><a href="#" class="twitter"></a></li>
-							<li><a href="#" class="facebook"></a></li>
-							<li><a href="#" class="google"></a></li>
-							<li><a href="#" class="p"></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<div class="footer-copy">
-		<div class="container">
-			<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="妯℃澘涔嬪">妯℃澘涔嬪</a> - Collect from <a href="http://www.cssmoban.com/" title="缃戦〉妯℃澘" target="_blank">缃戦〉妯℃澘</a></p>
-		</div>
-	</div>
-<!-- //footer -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
+  <footer>
+    <div class="footer">
+      <div class="f_l">
+        <p>All Rights Reserved 版权所有：<a href="http://www.yangqq.com">杨青个人博客</a> 备案号：蜀ICP备00000000号</p>
+      </div>
+      <div class="f_r textr">
+        <p>Design by DanceSmile</p>
+      </div>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
